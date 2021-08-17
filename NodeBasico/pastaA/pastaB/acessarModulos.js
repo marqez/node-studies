@@ -1,5 +1,5 @@
 const moduloA = require('../../moduloA')
-const pastaC = require('./pastaC');
+const pastaC = require('./pastaC');//com nome de index.js não é necessário colocar o caminho do arquivo.
 
 console.log(moduloA.ola)
 
