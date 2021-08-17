@@ -15,7 +15,7 @@ axios.get(url).then((response) => {
       return false;
     })
     .reduce((min, cur) => {
-      return min.salario < cur.salario ? min : cur;
+      return min.salario > cur.salario ? min : cur;
     });
   console.log(menor);
 });
