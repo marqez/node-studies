@@ -9,4 +9,4 @@ function real(partes, ...valores) {
 
 const preco = 29.9;
 const precoParcela = 11;
-console.log(real`1x de ${preco} ou 3x de ${precoParcela}.`);
+console.log(real`${preco} à vista ou 3x de ${precoParcela}.`);
