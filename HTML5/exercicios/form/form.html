@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      input,
+      textarea,
+      select {
+        display: block;
+        margin-bottom: 10px;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulário</h1>
+    <form action="http://localhost:3003/usuarios" method="POST">
+      <input type="text" name="nome" />
+      <input type="password" name="senha" />
+      <textarea name="texto" id="" cols="30" rows="10"></textarea>
+      <div>
+        <input type="radio" name="tipo" value="admin" /> Administrador
+        <input type="radio" name="tipo" value="regular" /> Regular
+        <input type="radio" name="tipo" value="professor" /> Professor
+      </div>
+      <div><input type="checkbox" name="ativo" id="" /> Ativo</div>
+      <select name="estado" id="">
+          <option value="">Selecione</option>
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="MS">Mato Grosso do Sul</option>
+      </select>
+      <select name="preferencias" size="5" multiple>
+          <option value="javascript">Javascript</option>
+          <option value="java">Java</option>
+          <option value="php">PHP</option>
+          <option value="python">Python</option>
+          <option value="cpp">C++</option>
+      </select>
+      <button>Incluir</button>
+    </form>
+  </body>
+</html>
